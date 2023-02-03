@@ -48,6 +48,7 @@ def generate_string(user_input):
         temperature=0.5
     )
     generated_response = response["choices"][0]["text"]
+    generated_response = generated_response.replace("<|im_end|>","")
     return generated_response
 
 
