@@ -45,8 +45,7 @@ def generate_string(user_input):
         max_tokens=1024,
         n=1,
         stop=None,
-        temperature=0.5,
-        steam=True,
+        temperature=0.5
     )
     generated_response = response["choices"][0]["text"]
     return generated_response
